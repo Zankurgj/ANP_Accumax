@@ -78,7 +78,7 @@ const initTeamParallax = () => {
         start: "-200 center",
         end: "bottom center",
         scrub: true,
-        markers: true,
+        // markers: true,
       },
     });
     tlTeamDesctop.to(".team-item--1", { y: 150, ease: "none" }, 0);
