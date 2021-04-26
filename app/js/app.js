@@ -70,23 +70,20 @@ const initSliderMobile = () => {
 };
 
 const initTeamParallax = () => {
-  const teamParallax = () => {
-    const checkWidth = $(window).width();
-    if (checkWidth > 992) {
-      const tlTeamDesctop = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".js--team-img-trigger",
-          start: "-200 center",
-          end: "bottom center",
-          scrub: true,
-          // markers: true,
-        },
-      });
-      tlTeamDesctop.to(".team-item--1", { y: 150, ease: "none" }, 0);
-      tlTeamDesctop.to(".team-item--2", { y: -150, ease: "none" }, 0);
-    }
-  };
-  $(window).resize(teamParallax);
+  const checkWidth = $(window).width();
+  if (checkWidth > 992) {
+    const tlTeamDesctop = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".js--team-img-trigger",
+        start: "-200 center",
+        end: "bottom center",
+        scrub: true,
+        markers: true,
+      },
+    });
+    tlTeamDesctop.to(".team-item--1", { y: 150, ease: "none" }, 0);
+    tlTeamDesctop.to(".team-item--2", { y: -150, ease: "none" }, 0);
+  }
 };
 
 const onCounterMinus = (id) => {
