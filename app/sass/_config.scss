@@ -1,0 +1,189 @@
+// IMPORT SECTION
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "node_modules/owl.carousel/dist/assets/owl.carousel";
+
+// USER VARIABLES SECTION
+
+$accent: #592c82; // Accent Color
+$fontsize: 16px; // Body Font Size
+$base-font-size: $fontsize;
+$textcolor: #fff; // Text Color
+$purple: #78538c;
+$mainfamily: News Gothic BT, sans-serif; // Main Font Family
+$newsGothic: NewsGothic, sans-serif;
+$din: DIN Pro, sans-serif;
+$base-duration: 0.3s;
+$base-timing: ease-in-out;
+$maxWidth: 1440px;
+$contentPadding: 20px;
+$mobile-bp: 992px;
+$lg-bp: 1400px;
+
+// FONTS LOAD SECTION
+@mixin font($f-name, $f-style, $f-weight, $f-url) {
+  @font-face {
+    font-family: $f-name;
+    font-style: $f-style;
+    font-weight: $f-weight;
+    src: url($f-url + ".woff2") format("woff2");
+    src: url($f-url + ".woff") format("woff");
+  }
+}
+
+@font-face {
+  font-family: "News Gothic BT";
+  src: url("../fonts/NewsGothicBT-Light.woff2") format("woff2"),
+    url("../fonts/NewsGothicBT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NewsGothic";
+  src: url("../fonts/NewsGothicBT-Light.woff2") format("woff2"),
+    url("../fonts/NewsGothicBT-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NewsGothic";
+  src: url("../fonts/NewsGothic.woff2") format("woff2"),
+    url("../fonts/NewsGothic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "News Gothic BT";
+  src: url("../fonts/NewsGothicBT-Bold.woff2") format("woff2"),
+    url("../fonts/NewsGothicBT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "News Gothic BT";
+  src: url("../fonts/NewsGothicBT-Regular.woff2") format("woff2"),
+    url("../fonts/NewsGothicBT-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NewsGoth BT";
+  src: url("../fonts/NewsGothicBT-Roman.woff2") format("woff2"),
+    url("../fonts/NewsGothicBT-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "DIN Pro";
+  src: url("../fonts/DINPro.woff2") format("woff2"),
+    url("../fonts/DINPro.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DIN Pro";
+  src: url("../fonts/DINPro-Bold.woff2") format("woff2"),
+    url("../fonts/DINPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@include font("ruble", normal, 400, "../fonts/rubl");
+
+// GENERAL DOCUMENT STYLES
+input,
+textarea {
+  outline: none;
+}
+
+body {
+  font-size: $fontsize;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.2;
+  font-family: $mainfamily;
+  overflow-x: hidden;
+  color: $textcolor;
+  background-color: $purple;
+  -webkit-font-smoothing: antialiased;
+  &.body--no-scroll {
+    overflow: hidden;
+  }
+}
+
+// HELP CLASS
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.svg-icon {
+  display: inline-block;
+  fill: currentColor;
+  use {
+    fill: currentColor;
+  }
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.container-fluid {
+  width: 100%;
+  padding: 0 $contentPadding;
+}
+.container {
+  max-width: $maxWidth;
+  padding: 0 $contentPadding;
+  margin: 0 auto;
+  @media screen and (max-width: $mobile-bp) {
+    padding: 0 16px;
+  }
+}
+.row {
+  display: flex;
+}
+
+.row--wrap {
+  flex-wrap: wrap;
+}
+.rub {
+  font-family: ruble;
+}
+.base-text {
+  font-size: rem(16);
+  color: #272727;
+  font-weight: 300;
+}
+// DELETE
+.bg-test {
+  background: cadetblue;
+}
+.svg-test-wrapper {
+  width: 100px;
+}

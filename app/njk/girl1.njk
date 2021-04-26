@@ -1,0 +1,669 @@
+{% set pageClass= 'page--main' %}
+{% extends "app/njk/layout/main.njk" %}
+{% block content %}
+
+<header class="container container--header main-header">
+    <div class="main-logo">
+        <img src="./images/dest/main_logo.png" alt="Логотип Аккумакс">
+    </div>
+    <button class="main-header-btn">
+        <span class="visually-hidden">корзина</span>
+    </button>
+</header>
+
+<main class="head js--head-img-trigger">
+    <div class="container container--head">
+        <div class="row row--head">
+            <div class="head-inner">
+                <h1 class="h1-main">АККУМАКС<br>
+                    для проблемной кожи
+                </h1>
+                <p class="head-text">Комплекс фитонутриентов для чистоты
+                    и здоровья кожи изнутри
+                </p>
+                <button class="btn--main btn--head">КУПИТЬ</button>
+                <div class="head-icon-block">
+                    <img src="./images/dest/top-icon3.png" alt="" class="head-icon head-icon--1">
+                    <img src="./images/dest/top-icon2.png" alt="" class="head-icon head-icon--2">
+                    <img src="./images/dest/top-icon1.png" alt="" class="head-icon head-icon--3">
+                </div>
+                <p class="head-text-alert">бад. не является лекарством.</p>
+            </div>
+            <div class="head-img-wrapper head-img-wrapper--girl1">
+                <picture>
+                    <source srcset="./images/dest/top_img1-m.png" media="(max-width: 992px)">
+                    <img class="head-img" src="./images/dest/top_img1.png" alt="Аккумакс для проблемной кожи">
+                </picture>
+            </div>
+        </div>
+    </div>
+</main>
+<section class="section-information">
+    <div class="row row--information">
+        <div class="col-slider">
+            <div class="information-slider-wrapper">
+                <div class="owl-carousel information-slider js--information-slider" data-slider-id="1">
+                    <div>
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slide-img" src="./images/dest/slider_img2.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                        <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slide-img" src="./images/dest/slider_img1.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slide-img" src="./images/dest/slider_img4.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </div>
+                    <div>
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slide-img" src="./images/dest/slider_img5.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </div>
+
+                </div>
+                <div class="information-slider-thumbs js--information-slider-thumbs" data-slider-id="1">
+                    <button class="information-slider-thumb-item js--information-slider-thumb-item">
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slider-thumb-img" src="./images/dest/thumb2.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </button>
+                    <button class="information-slider-thumb-item js--information-slider-thumb-item">
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slider-thumb-img" src="./images/dest/thumb3.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </button>
+                    <button class="information-slider-thumb-item js--information-slider-thumb-item">
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slider-thumb-img" src="./images/dest/thumb4.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </button>
+                    <button class="information-slider-thumb-item js--information-slider-thumb-item">
+                        <picture>
+                            <!-- <source srcset="./images/dest/img/menu/menu_hov6.avif" type="image/avif">
+                            <source srcset="./images/dest/img/menu/menu_hov6.webp" type="image/webp"> -->
+                            <img class="information-slider-thumb-img" src="./images/dest/thumb5.png"
+                                alt="Аккумакс для проблемной кожи">
+                        </picture>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-information">
+            <div class="information-inner">
+                <h2 class="h2-main">
+                    <strong>Skin Accumax ™ — </strong><br>
+                    Аккумакс для проблемной кожи
+                </h2>
+                <p class="information-subtitle">
+                    Клинически доказано сокращение <br>
+                    высыпаний в течение 8 недель.*
+                </p>
+                <p class="information-text">Комплекс Skin Accumax ™ объединяет витамин А, витамин С, витамин Е и
+                    фитонутриент из
+                    брокколи (дииндолилметан, DIM).</p>
+                <p class="information-text">Действуя изнутри, Skin Accumax™ уменьшает жирный блеск кожи, сокращает
+                    чрезмерное
+                    ороговение клеток кожи и оказывает мощное противовоспалительное воздействие, сокращает количество
+                    воспалительных элементов.</p>
+                <p class="information-text text-center"><strong>Здоровая кожа рождается внутри!</strong></p>
+                <div class="information-item-block information-item-block--top">
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg1.svg" alt="Снижает выработкукожного сала">
+                            </div>
+                            <span class="information-item-text">
+                                Снижает выработку
+                                кожного сала
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg7.svg" alt="Уменьшает количество воспалительных элементов">
+                            </div>
+                            <span class="information-item-text">
+                                Уменьшает количество
+                                воспалительных элементов
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg22.svg" alt="Активирует регенерацию кожи">
+                            </div>
+                            <span class="information-item-text">
+                                Активирует
+                                регенерацию кожи
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg3.svg" alt="Выравнивает поверхность кожи">
+                            </div>
+                            <span class="information-item-text">
+                                Выравнивает
+                                поверхность кожи
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="information-item-block information-item-block--bottom">
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg15.svg" alt=" РАЗРАБОТАН СПЕЦИАЛЬНО ДЛЯ ПРОБЛЕМНОЙ КОЖИ">
+                            </div>
+                            <span class="information-item-text">
+                                РАЗРАБОТАН СПЕЦИАЛЬНО
+                                ДЛЯ ПРОБЛЕМНОЙ КОЖИ
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg4.svg" alt="Эффективен на всей поверхности кожив">
+                            </div>
+                            <span class="information-item-text">
+                                Эффективен на всей
+                                поверхности кожи
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg24.svg" alt="Повышает самооценку и уверенность в себе!">
+                            </div>
+                            <span class="information-item-text">
+                                Повышает самооценку
+                                и уверенность в себе!
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="information-item-col">
+                        <div class="information-item">
+                            <div class="information-item-icon">
+                                <img src="./images/dest/svg14.svg"
+                                    alt="Не содержит агрессивных химических веществ, подходит для веганов">
+                            </div>
+                            <span class="information-item-text">
+                                Не содержит агрессивных
+                                химических веществ,
+                                подходит для веганов
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="information-form">
+                    <p class="information-text"><b>Курс:</b> 1-2 капсулы 2 раза в день во время еды в зависимости от
+                        тяжести.
+                        16+. Индивидуальная непереносимость компонентов продукта, беременность, планирование
+                        беременности,
+                        лактация.
+                    </p>
+                    <div class="information-counter-inner">
+                        <div class="information-counter-title-wrapper">
+                            <span class="information-counter-title">Упаковка</span>
+                            <span class="information-counter-title">кол-во</span>
+                            <span class="information-counter-title">Цена</span>
+                        </div>
+                        <div class="information-counter-item">
+                            <div class="information-counter-quantity">
+                                <label class="information-counter-input-wrapper">
+                                    <input type="checkbox" class="information-counter-input" name="informationCost">
+                                    <span class="information-counter-input-fake"></span>
+                                    <span><span class="information-counter-number">60</span> капсул</span>
+                                </label>
+                            </div>
+                            <div class="information-counter-wrapper">
+                                <button class="btn-item-counter btn-item-counter--minus" type="button"
+                                    onclick="onCounterMinus('counter1')"><span>–</span></button>
+                                <input class="item-counter-input" type="text" value="1" size="4" readonly id="counter1">
+                                <button class="btn-item-counter btn-item-counter--plus" type="button"
+                                    onclick="onCounterPlus('counter1')"><span>+</span></button>
+                            </div>
+                            <p class="information-counter-cost"><span data-counter-cost-id="counter1"
+                                    data-counter-cost="4860">4860</span> <i class="rub">i</i></p>
+                        </div>
+
+                        <div class="information-counter-item">
+                            <div class="information-counter-quantity">
+                                <label class="information-counter-input-wrapper">
+                                    <input type="checkbox" class="information-counter-input" name="informationCost">
+                                    <span class="information-counter-input-fake"></span>
+                                    <span><span class="information-counter-number">120</span> капсул</span>
+                                </label>
+                            </div>
+                            <div class="information-counter-wrapper">
+                                <button class="btn-item-counter btn-item-counter--minus" type="button"
+                                    onclick="onCounterMinus('counter2')"><span>–</span></button>
+                                <input class="item-counter-input" type="text" value="1" size="4" readonly id="counter2">
+                                <button class="btn-item-counter btn-item-counter--plus" type="button"
+                                    onclick="onCounterPlus('counter2')"><span>+</span></button>
+                            </div>
+                            <p class="information-counter-cost"><span data-counter-cost-id="counter2"
+                                    data-counter-cost="8820">8820</span> <i class="rub">i</i></p>
+                        </div>
+
+                        <div class="information-counter-item">
+                            <div class="information-counter-quantity">
+                                <label class="information-counter-input-wrapper">
+                                    <input type="checkbox" class="information-counter-input" name="informationCost">
+                                    <span class="information-counter-input-fake"></span>
+                                    <span><span class="information-counter-number">180</span> капсул</span>
+                                </label>
+                            </div>
+                            <div class="information-counter-wrapper">
+                                <button class="btn-item-counter btn-item-counter--minus" type="button"
+                                    onclick="onCounterMinus('counter3')"><span>–</span></button>
+                                <input class="item-counter-input" type="text" value="1" size="4" readonly id="counter3">
+                                <button class="btn-item-counter btn-item-counter--plus" type="button"
+                                    onclick="onCounterPlus('counter3')"><span>+</span></button>
+                            </div>
+                            <p class="information-counter-cost"><span data-counter-cost-id="counter3"
+                                    data-counter-cost="10940">10940</span> <i class="rub">i</i></p>
+                        </div>
+                    </div>
+                    <label class="information-form-input-wrapper">
+                        <p class="information-form-title">Получите <b>10% </b> скидку на первый заказ.</p>
+                        <input type="text" class="information-form-input" placeholder="Введите адрес электронной почты">
+                    </label>
+                    <button class="btn--main btn--information-form" type="submit">КУПИТЬ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-feature">
+    <div class="container container-feature">
+        <h3 class="h3-main h3-main--feature">Результаты применения</h3>
+        <div class="feature-slider-block">
+            <div class="owl-carousel feature-slider js--feature-slider">
+                <div class="feature-slide">
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/before-ex.png" alt="До применения">
+                    </div>
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/after-ex.png" alt="После применения">
+                    </div>
+                </div>
+
+                <div class="feature-slide">
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/before-ex.png" alt="До применения">
+                    </div>
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/after-ex.png" alt="После применения">
+                    </div>
+                </div>
+
+                <div class="feature-slide">
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/before-ex.png" alt="До применения">
+                    </div>
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/after-ex.png" alt="После применения">
+                    </div>
+                </div>
+
+                <div class="feature-slide">
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/before-ex.png" alt="До применения">
+                    </div>
+                    <div class="feature-slide-img">
+                        <img src="./images/dest/after-ex.png" alt="После применения">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feauter-inner">
+            <div class="row row--wrap row--feauter-inner">
+                <div class="feauter-inner-col">
+                    <div class="feature-separator">
+                        <div class="feature-line"></div>
+                    </div>
+                    <div class="feauter-img">
+                        <img src="./images/dest/svg5.svg" alt="Наполняет">
+                    </div>
+                    <div class="feauter-text-wrapper">
+                        <p class="feauter-title">Наполняет</p>
+                        <span class="feauter-date">1 месяц</span>
+                        <p class="feauter-text">Активные ингредиенты начинают попадать в кожу на 8 день после начала
+                            приема
+                            витаминов и только на 19 день достигают своего максимума. Наполняя клетки микронутриенты
+                            способствуют улучшению функционирования кожи.</p>
+                    </div>
+                </div>
+
+                <div class="feauter-inner-col">
+                    <div class="feature-separator">
+                        <div class="feature-line"></div>
+                    </div>
+                    <div class="feauter-img">
+                        <img src="./images/dest/svg19.svg" alt="Оптимизирует">
+                    </div>
+                    <div class="feauter-text-wrapper">
+                        <p class="feauter-title">Оптимизирует</p>
+                        <span class="feauter-date">2 месяц</span>
+                        <p class="feauter-text">Оптимальные уровень питательных веществ придает коже заметное сияние, а
+                            через 4-8 недель цвет лица становится более ровным и сбалансированным</p>
+                    </div>
+                </div>
+
+                <div class="feauter-inner-col">
+                    <div class="feauter-img">
+                        <img src="./images/dest/svg21.svg" alt="Восстанавливает">
+                    </div>
+                    <div class="feauter-text-wrapper">
+                        <p class="feauter-title">Восстанавливает</p>
+                        <span class="feauter-date">3 месяц</span>
+                        <p class="feauter-text">Выраженные улучшения тона и текстуры кожи. Заметное снижение количества
+                            воспалительных элементов. Максимальные результаты достигаются через 14+ недель применения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn--main btn--feauter">купить</button>
+        </div>
+    </div>
+</section>
+
+<section class="section-about">
+    <h3 class="h3-main h3-main--about">Что внутри?</h3>
+    <div class="container container-about">
+        <div class="row row--about js--slider-mobile slider-arrow-small">
+            <div class="about-col">
+                <div class="about-item">
+                    <div class="about-item-img">
+                        <img src="./images/dest/svg6.svg" alt="Фитонутриент">
+                    </div>
+                    <div class="about-item-text-block">
+                        <p class="about-item-title"><b>Фитонутриент (DIM)</b> 37,5 мг</p>
+                        <p class="about-item-text">Снижает чувствительность рецепторов сальной железы к действию
+                            андрогенов,
+                            за счет чего снижается выработка кожного сала и уменьшается количество воспалительных
+                            элементов.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-col">
+                <div class="about-item">
+                    <div class="about-item-img">
+                        <img src="./images/dest/svg12.svg" alt="Витамин С">
+                    </div>
+                    <div class="about-item-text-block">
+                        <p class="about-item-title"><b>Витамин С </b> 20мг</p>
+                        <p class="about-item-text">Сокращает интенсивность процесса ороговения.
+                    </div>
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-col">
+                <div class="about-item">
+                    <div class="about-item-img">
+                        <img src="./images/dest/svg17.svg" alt="Витамин Е">
+                    </div>
+                    <div class="about-item-text-block">
+                        <p class="about-item-title"><b>Витамин Е </b> 9,8 мг</p>
+                        <p class="about-item-text">Делает кожу гладкой, улучшает тонус сосудов</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-col">
+                <div class="about-item">
+                    <div class="about-item-img">
+                        <img src="./images/dest/svg16.svg" alt="Витамин А ">
+                    </div>
+                    <div class="about-item-text-block">
+                        <p class="about-item-title"><b>Витамин А </b> 0,4 мг</p>
+                        <p class="about-item-text">Ускоряет процесс деления клеток, активирует регенерацию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn--white btn--about">все ингредиенты</button>
+</section>
+
+<section class="section-team js--team-img-trigger">
+    <h3 class="h3-main h3-main--team">Выбор профессионалов:</h3>
+    <div class="container container--team">
+        <div class="row row--team">
+            <div class="col-team-text">
+                <div class="team-text-inner">
+                    <p class="team-text">Аккумакс для проблемной кожи рекомендуется всем, кто ищет немедикаментозное
+                        решение проблемы акне в любом возрасте.</p>
+                    <p class="team-subtitle">О. Сенцова, врач-дерматолог.</p>
+                </div>
+            </div>
+            <div class="col-team-items js--team-img-trigger-mobile">
+                <div class="team-item team-item--1">
+                    <div class="team-item-img">
+                        <img src="./images/dest/team1.png" alt="Ольга Сенцова">
+                    </div>
+                    <p class="team-item-text"><b>Ольга Сенцова,</b></p>
+                    <p class="team-item-text">врач-дерматолог</p>
+                </div>
+                <div class="team-item team-item--2">
+                    <div class="team-item-img">
+                        <img src="./images/dest/team2.png" alt="Cветлана Pверева">
+                    </div>
+                    <p class="team-item-text"><b>светлана зверева,</b></p>
+                    <p class="team-item-text">провизор</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section-study">
+    <h3 class="h3-main h3-main--study">Клиническое исследование</h3>
+    <div class="container container--study">
+        <div class="study-icon">
+            <img src="./images/dest/svg15.svg" alt="Клиническое исследование">
+        </div>
+        <div class="study-inner">
+            <p class="study-text">
+                Клинические исследование: <b>58</b> участников, <b>16</b> недель <br>
+                <b>59%</b> участников отметили уменьшения воспаления начиная с <b>8</b> недели приема
+            </p>
+            <p class="study-subtitle">
+                58 участникам в возрасте 16-35 лет, которые имели персистирующую форму акне, но не имели других проблем
+                со здоровьем,
+                принимали по 2 капсулы Skin Accumax™ дважды в день в течение 16 недель
+            </p>
+        </div>
+        <button class="btn--main btn--study">КУПИТЬ</button>
+
+        <form class="study-form">
+            <p class="study-form-text">Получите <b>10%</b> скидку на первый заказ.</p>
+            <input type="text" class="information-form-input information-form-input--study"
+                placeholder="Введите адрес электронной почты">
+            <button class="btn--white-small btn--study-get">получить</button>
+        </form>
+    </div>
+</section>
+
+<section class="section-booster">
+    <h3 class="h3-main h3-main--booster">Бустеры для идеальной кожи:</h3>
+    <div class="container container--booster">
+        <div class="row js--slider-mobile slider-arrow-small">
+            <div class="booster-col">
+                <div class="booster-item">
+                    <div class="booster-img">
+                        <img src="./images/dest/booster1.png" alt="БИОМ ЧИСТОЙ КОЖИ">
+                    </div>
+                    <p class="booster-title">БИОМ ЧИСТОЙ КОЖИ</p>
+                    <p class="booster-text">Четыре штамма полезных <br>
+                        бактерий с цинком <br>
+                        для чистоты кожи</p>
+                    <button class="btn--main btn--booster">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="booster-col">
+                <div class="booster-item">
+                    <div class="booster-img">
+                        <img src="./images/dest/booster2.png" alt="СКИН ВИТАЛИТИ">
+                    </div>
+                    <p class="booster-title">СКИН ВИТАЛИТИ</p>
+                    <p class="booster-text">Мультивитаминный комплекс <br>
+                        для здоровья кожи
+                    </p>
+                    <button class="btn--main btn--booster">КУПИТЬ</button>
+                </div>
+            </div>
+
+            <div class="booster-col">
+                <div class="booster-item">
+                    <div class="booster-img">
+                        <img src="./images/dest/booster3.png" alt="ОМЕГА 3+ ДЛЯ КОЖИ">
+                    </div>
+                    <p class="booster-title">ОМЕГА 3+ ДЛЯ КОЖИ</p>
+                    <p class="booster-text">Увлажнение <br>
+                        и питание кожи изнутри</p>
+                    <button class="btn--main btn--booster">КУПИТЬ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-feature2">
+    <h3 class="h3-main h3-main--feature2">Почему ADVANCED NUTRITION PROGRAMMETM</h3>
+    <div class="container container--feature2">
+        <div class="row row--feature2 row--wrap">
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg20.svg" alt="СДЕЛАНО В ВЕЛИКОБРИТАНИИ">
+                    </div>
+                    <p class="feature2-text">СДЕЛАНО <br>
+                        В ВЕЛИКОБРИТАНИИ</p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg11.svg" alt="БЕЗ ГМО">
+                    </div>
+                    <p class="feature2-text">БЕЗ ГМО</p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg2.svg" alt="НЕ ТЕСТИРУЕТСЯ НА ЖИВОТНЫХ">
+                    </div>
+                    <p class="feature2-text">НЕ ТЕСТИРУЕТСЯ <br>
+                        НА ЖИВОТНЫХ</p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg10.svg" alt="БЕЗ ИСКУССТВЕННЫХ КРАСИТЕЛЕЙ И АРОМАТИЗАТОРОВ">
+                    </div>
+                    <p class="feature2-text">БЕЗ ИСКУССТВЕННЫХ <br>
+                        КРАСИТЕЛЕЙ <br>
+                        И АРОМАТИЗАТОРОВ</p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg18.svg"
+                            alt="ИНГРЕДИЕНТЫ, ПРОДУКТ И УПАКОВКА НЕ ПОДВЕРГАЮТСЯ ОБЛУЧЕНИЮ">
+                    </div>
+                    <p class="feature2-text">ИНГРЕДИЕНТЫ, ПРОДУКТ <br>
+                        И УПАКОВКА НЕ ПОДВЕРГАЮТСЯ <br>
+                        ОБЛУЧЕНИЮ</p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg8.svg" alt="ПОДХОДИТ ВЕГЕТАРИАНЦАМ">
+                    </div>
+                    <p class="feature2-text">ПОДХОДИТ <br>
+                        ВЕГЕТАРИАНЦАМ</p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg9.svg" alt="БЕЗ ГЛЮТЕНА ">
+                    </div>
+                    <p class="feature2-text">БЕЗ ГЛЮТЕНА </p>
+                </div>
+            </div>
+
+            <div class="feature2-col">
+                <div class="feature2-item">
+                    <div class="feature2-img">
+                        <img src="./images/dest/svg23.svg" alt="С ВНИМАНИЕМ К ОКРУЖЮЩЕЙ СРЕДЕ">
+                    </div>
+                    <p class="feature2-text">С ВНИМАНИЕМ <br>
+                        К ОКРУЖЮЩЕЙ СРЕДЕ</p>
+                </div>
+            </div>
+        </div>
+        <div class="feature2-block-buy">
+            <p class="feature2-title">БЕЗОПАСНО ДЛЯ ПРИРОДЫ.</p>
+            <p class="feature2-subtitle">ПРЕВОСХОДНО ДЛЯ КОЖИ</p>
+            <button class="btn--main btn--feature2">купить</button>
+            <p class="feature2-alert">бад. не является лекарством.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
