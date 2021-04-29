@@ -107,3 +107,7 @@ const setCounterVal = (id, val) => {
   document.getElementById(id).value = val;
   costItem.innerHTML = String(costVal * val);
 };
+
+const onToogleAbout = () => {
+  document.querySelector("#aboutPopup").classList.toggle("show");
+};
