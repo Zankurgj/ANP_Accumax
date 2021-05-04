@@ -2,7 +2,7 @@
   position: relative;
 }
 .main-header {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 80px;
   width: 100%;
@@ -11,7 +11,7 @@
   align-items: center;
   transform: translateX(-50%);
   z-index: 10;
-  @media screen and (max-width: $lg-bp) {
+  @media screen and (max-width: 1440px) {
     top: 50px;
   }
   @media screen and (max-width: $mobile-bp) {
@@ -51,9 +51,7 @@
   padding-top: 168px;
   margin-bottom: 80px;
   overflow: hidden;
-  @media screen and (max-width: $lg-bp) {
-    height: 80vw;
-  }
+  height: 100vh;
   @media screen and (max-width: $mobile-bp) {
     padding-top: 186px;
     height: auto;
@@ -87,6 +85,9 @@
   align-items: center;
   z-index: 2;
   max-width: 605px;
+  @media screen and (max-width: 1920px) {
+    font-size: 2vh;
+  }
   @media screen and (max-width: $lg-bp) {
     max-width: 525px;
   }
@@ -115,10 +116,11 @@
 }
 .head-img-wrapper--girl1 {
   .head-img {
-    width: 848px;
+    width: 75vh;
     height: auto;
+    max-width: 848px;
     @media screen and (max-width: $lg-bp) {
-      width: 54vw;
+      width: 60vh;
       height: auto;
     }
     @media screen and (max-width: $mobile-bp) {
@@ -128,10 +130,10 @@
 }
 .head-img-wrapper--girl2 {
   .head-img {
-    width: 848px;
+    width: 70vh;
     height: auto;
     @media screen and (max-width: $lg-bp) {
-      width: 54vw;
+      width: 60vh;
       height: auto;
     }
     @media screen and (max-width: $mobile-bp) {
@@ -141,12 +143,9 @@
 }
 .head-img-wrapper--man {
   .head-img {
-    width: 848px;
+    max-width: 867px;
+    width: 80vh;
     height: auto;
-    @media screen and (max-width: $lg-bp) {
-      width: 54vw;
-      height: auto;
-    }
     @media screen and (max-width: $mobile-bp) {
       width: 600px;
     }
@@ -156,30 +155,21 @@
   display: block;
 }
 .h1-main {
-  font-size: 48px;
-  line-height: 52px;
+  font-size: 2.4em;
+  line-height: 1.1;
   text-align: center;
   text-transform: none;
-  margin-bottom: 55px;
-  @media screen and (max-width: $lg-bp) {
-    font-size: 40px;
-    line-height: 46px;
-    margin-bottom: 35px;
-  }
+  margin-bottom: 1.2em;
   @media screen and (max-width: $mobile-bp) {
     font-size: 22px;
     line-height: 1.2;
   }
 }
 .head-text {
-  font-size: 34px;
+  font-size: 1.7em;
   text-align: center;
   line-height: 1.1;
-  margin-bottom: 64px;
-  @media screen and (max-width: $lg-bp) {
-    font-size: 28px;
-    margin-bottom: 44px;
-  }
+  margin-bottom: 1.5em;
   @media screen and (max-width: $mobile-bp) {
     font-size: 18px;
     margin-bottom: 330px;
@@ -200,6 +190,9 @@
 .head-icon-block {
   display: flex;
   margin-bottom: 80px;
+  @media screen and (max-width: 1920px) {
+    margin-bottom: 3em;
+  }
   @media screen and (max-width: $mobile-bp) {
     margin-bottom: 20px;
   }
@@ -217,7 +210,7 @@
 .head-icon--1 {
   width: 82px;
   height: 106px;
-  @media screen and (max-width: $lg-bp) {
+  @media screen and (max-width: 1920px) {
     width: 62px;
     height: 86px;
   }
@@ -229,7 +222,7 @@
 .head-icon--2 {
   width: 100px;
   height: 106px;
-  @media screen and (max-width: $lg-bp) {
+  @media screen and (max-width: 1920px) {
     width: 80px;
     height: 86px;
   }
@@ -241,7 +234,7 @@
 .head-icon--3 {
   width: 85px;
   height: 106px;
-  @media screen and (max-width: $lg-bp) {
+  @media screen and (max-width: 1920px) {
     width: 75px;
     height: 86px;
   }
@@ -252,15 +245,15 @@
 }
 .head-text-alert {
   font-size: 40px;
-  line-height: 40px;
+  line-height: 1;
   color: rgba($color: #fff, $alpha: 0.1);
   text-transform: uppercase;
   transform: matrix(0.77546697409974, 0, 0, 2.41376350851918, 0, 0);
   font-weight: bold;
   white-space: nowrap;
   margin-bottom: 20px;
-  @media screen and (max-width: $lg-bp) {
-    font-size: 36px;
+  @media screen and (max-width: 1920px) {
+    font-size: 2.2em;
   }
   @media screen and (max-width: $mobile-bp) {
     font-size: 28px;
