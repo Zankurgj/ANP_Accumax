@@ -1215,7 +1215,7 @@
       flex: 0 0 auto;
       display: flex;
       max-width: 100%;
-      flex-basis: 100%;
+      flex-basis: auto;
       justify-content: center;
       margin-bottom: 40px;
       padding: 75px 20px 20px 20px;
@@ -1293,7 +1293,7 @@
     @media screen and (max-width: $mobile-bp) {
       flex: 0 0 auto;
       max-width: 100%;
-      flex-basis: 100%;
+      flex-basis: auto;
       justify-content: center;
     }
   }
